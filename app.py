@@ -9,7 +9,7 @@ welcome = "Welcome to the programming diary!"
 
 print(welcome)
 
-while (user_input := input(menu))!= "3": #walrus feature available in 3.8
+while (user_input := input(menu))!= "3": #walrus feature available in 3.8, essentially it becomes a BOOLEAN
     if (user_input == "1"):
         print("Adding")
     elif (user_input == "2"):
