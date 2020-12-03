@@ -8,7 +8,7 @@ menu = """Please select one of the following options:
 
 your selection : """
 
-welcome = "Welcome to the programming diary!"
+welcome = "Welcome to the programming diary!"2
 
 print(welcome)
 
