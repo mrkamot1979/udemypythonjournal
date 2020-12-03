@@ -8,13 +8,15 @@ menu = """Please select one of the following options:
 
 your selection : """
 
-welcome = "Welcome to the programming diary!"2
+welcome = "Welcome to the programming diary!"
 
 print(welcome)
 
 while (user_input := input(menu))!= "3": #walrus feature available in 3.8, essentially it becomes a BOOLEAN
     if (user_input == "1"):
-        add_entry()
+        entry_content = input("What have you learned today?: ")
+        entry_date = input ("Enter the date: ")
+        add_entry(entry_content, entry_date)
     elif (user_input == "2"):
         view_entry()
     else:
