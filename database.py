@@ -11,5 +11,3 @@ def view_entry():
         print(f"{entry['date']}\n{entry['content']}\n\n")
         
 
-add_entry()
-view_entry()
