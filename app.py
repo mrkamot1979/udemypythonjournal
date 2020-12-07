@@ -1,3 +1,4 @@
+
 from database import add_entry, get_entries
 
 menu = """Please select one of the following options:
