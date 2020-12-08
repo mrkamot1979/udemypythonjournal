@@ -1,5 +1,5 @@
 
-from database import add_entry, get_entries
+from database import create_table, add_entry, get_entries
 
 menu = """Please select one of the following options:
 1) Add new entry for today.
@@ -9,6 +9,7 @@ menu = """Please select one of the following options:
 your selection : """
 
 welcome = "Welcome to the programming diary!"
+
 
 def prompt_new_entry():
     entry_content = input("What have you learned today?: ")
@@ -21,6 +22,7 @@ def view_entries(entries):
 
 
 print(welcome)
+create_table()
 
 while (user_input := input(menu))!= "3": #walrus feature available in 3.8, essentially it becomes a BOOLEAN
     if (user_input == "1"):
